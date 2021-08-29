@@ -8,3 +8,4 @@ function stopWatch() {
 let clock1 = stopWatch();
 console.log(clock1());
 console.log(clock1());
+

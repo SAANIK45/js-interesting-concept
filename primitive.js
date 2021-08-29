@@ -6,11 +6,10 @@ primitive data types
 3. boolean
 4. undefined
 5. null
-
-7. symbol
+6. symbol
 
 non-primitive
-6. object
+7. object
 */
 
 let a = 'hello';
