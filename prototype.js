@@ -1,5 +1,6 @@
-// Javascript er mddhe class blte kichu nai . javascript prototype er maddhome child object create kore.
 
+//Example 1
+// Javascript er mddhe class blte kichu nai . javascript prototype er maddhome child object create kore.
 //Parent Object Or function or a constructor function
 function Person(name, age) {
   //child object / get values from Person.Prototype
@@ -27,7 +28,7 @@ const musfiq = Person("Musfiq", 32);
 // console.log(musfiq.sleep());
 
 
-
+//Example 2
 //Use with new keyword
 function PersonWithNew(name, age) {
 // jokhon new keyword diye object create kori tokhn Object.create use korar drkar hoina eita js nijei handle kore 
@@ -56,3 +57,6 @@ const tamim = new PersonWithNew("Tamim", 34);
 console.log(tamim.eat());
 
 const anik =new PersonWithNew("Anik", 32);
+
+
+// Follow class.js the updated version of prototype which introduced class 
