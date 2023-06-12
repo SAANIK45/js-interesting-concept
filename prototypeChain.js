@@ -10,3 +10,6 @@ Object.prototype.anik = function () {
 var p = {};
 //eijnno eikhane p.anik() access krte parchi
 p.anik();
+
+
+//refers from prototype class 
