@@ -11,19 +11,20 @@ Person.prototype = {
   },
 };
 
-//Sub class 
+//Sub class
 function Cricketer(name, age, type, country) {
+  //Explicit call Person with .call method to inherit Person items
   Person.call(this);
-  this.type = type; 
+  this.type = type;
   this.country = country;
   this.name = name;
-  this.age= age;
+  this.age = age;
 }
 //Get person prototype values in cricketer prototype
 Cricketer.prototype = Object.create(Person.prototype);
 //Overrite  constructor behave
 Cricketer.prototype.constructor = Cricketer;
 //create new object
-let sakib = new Cricketer('Sakib' , 32 , 'All rounder' , "Bangladesh" );
+let sakib = new Cricketer("Sakib", 32, "All rounder", "Bangladesh");
 //call
-console.log(sakib.eat())
+console.log(sakib.eat());
