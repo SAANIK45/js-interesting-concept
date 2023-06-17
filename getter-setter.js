@@ -9,11 +9,28 @@ class Person {
   }
 
   //Getter -  its look like method but behave like property
-  get setName(){
+  get setName() {
     return this.name;
   }
-}
-//Create new object
-let sakib = new Person("Sakib", 32);
+  //setter - 
+  set setName(name) {
+    this.name = name;
+  }
 
-console.log(sakib.setName)
+  //static method 
+
+  static isEqualAge(sakib , tamim){
+    return sakib.age === tamim.age;
+  }
+
+}
+//Create new object its look like method but behave like property
+let sakib = new Person("Sakib", 32);
+let tamim = new Person("Sakib", 31);
+
+console.log(sakib.setName);
+
+sakib.setName = 'Tamim';
+
+
+console.log(Person.isEqualAge(sakib , tamim))
