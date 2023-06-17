@@ -17,8 +17,7 @@ class Person {
     this.name = name;
   }
 
-  //static method 
-
+  //static method - there are no relation with the object we create . we can access it using class name 
   static isEqualAge(sakib , tamim){
     return sakib.age === tamim.age;
   }
